@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+
+    <script type="text/javascript" src="clients/updateClient.js"></script>
+    <script type="text/javascript" src="clients/detailClient.js"></script>
+  </head>
+  <body>
+    <div class="details_container">
+      <div class="form__container">
+        <h1 class="title__container">CLIENTES</h1>
+        <div class="form_box_detail">
+          <div class="fields__container fields__detail__container">
+            <h6>Id</h6>
+            <input type="number" id="id_client" disabled />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>Nombre</h6>
+            <input type="text" id="name_client" />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>Email</h6>
+            <input type="email" id="email_client" />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>Años</h6>
+            <input type="number" id="age_client" />
+          </div>
+        </div>
+      </div>
+      <div class="footer_options">
+        <button
+          class="btns btn_update"
+          id="btns_update_client"
+          onclick="updateClient()"
+        >
+          Actualizar
+        </button>
+        <a class="btn_home" href="index.html">Ir al Inicio</a>
+      </div>
+    </div>
+  </body>
+</html>

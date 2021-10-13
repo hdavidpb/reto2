@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+
+    <script type="text/javascript" src="js/actualizar.js"></script>
+    <script type="text/javascript" src="js/detalle.js"></script>
+  </head>
+  <body>
+    <div class="details_container">
+      <div class="form__container">
+        <h1 class="title__container">ACTUALIZAR ORTHESIS</h1>
+        <div class="form_box_detail">
+          <div class="fields__container fields__detail__container">
+            <h6>Id</h6>
+            <input type="number" id="orthesis_id" disabled />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>Nombre</h6>
+            <input type="text" id="orthesis_name" />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>Marca</h6>
+            <input type="email" id="orthesis_brand" />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>ID de categoria</h6>
+            <input type="number" id="orthesis_category" />
+          </div>
+          <div class="fields__container fields__detail__container">
+            <h6>Modelo</h6>
+            <input type="number" id="orthesis__model" />
+          </div>
+        </div>
+      </div>
+      <div class="footer_options">
+        <button
+          class="btns btn_update"
+          id="btns_update_client"
+          onclick="actualizar()"
+        >
+          Actualizar
+        </button>
+        <a class="btn_home" href="index.html">Ir al Inicio</a>
+      </div>
+    </div>
+  </body>
+</html>
